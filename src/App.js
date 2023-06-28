@@ -8,7 +8,7 @@ import About from './pages/About'
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Layout />} >
+      <Route path='/mbazze' element={<Layout />} >
         <Route index element={<Home />} />
         <Route path='/about'>
         <Route index element={<About />} />
