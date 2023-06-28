@@ -30,25 +30,25 @@ export default function Navbar() {
       <img src={logo} alt="logo" />   
     </header>
     <ul 
-    className='flex-col justify-evenly absolute top-14 h-[50vh] list-none align-middle w-full z-9 text-center bg-black mt-1 py-5 md:hidden'
+    className='flex-col justify-evenly absolute top-14 h-[50vh] list-none align-middle w-full z-9 text-center bg-black py-5 md:hidden'
     style={{
       left: navbar
     }}
     >
       <Link to="/" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1'>Home</li>
+      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Home</li>
       </Link>
       <Link  to="/about"  onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1'>About Us</li>
+      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>About Us</li>
       </Link>
       <Link  to="/service" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1'>Our Services</li>
+      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Our Services</li>
       </Link>
       <Link to="/contact" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1'>Contact Us</li>
+      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Contact Us</li>
       </Link>
       <Link  to="/team" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1'>The Team</li>
+      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>The Team</li>
       </Link>
 
         <Lunk to='subscribe'
