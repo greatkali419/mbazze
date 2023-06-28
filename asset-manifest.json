@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/mbazze/static/css/main.a7840425.css",
+    "main.js": "/mbazze/static/js/main.dff7bf41.js",
+    "static/media/image3.jpg": "/mbazze/static/media/image3.1efe127eafaf70e90160.jpg",
+    "static/media/image7.jpg": "/mbazze/static/media/image7.c322a60fedacdc6021c5.jpg",
+    "static/media/image10.jpg": "/mbazze/static/media/image10.779fda47b6082a024c78.jpg",
+    "static/media/background.jpg": "/mbazze/static/media/background.ec8d4f0545c959cec16c.jpg",
+    "static/media/iphone.jpg": "/mbazze/static/media/iphone.39949f5d8d08338f7c7a.jpg",
+    "static/media/image8.jpg": "/mbazze/static/media/image8.48f03e9c6b832f23aeb8.jpg",
+    "static/media/digital.jpg": "/mbazze/static/media/digital.94be351fb8f8732be396.jpg",
+    "static/media/brand.jpg": "/mbazze/static/media/brand.052e1aa35f1ccce4ab3a.jpg",
+    "static/media/image11.jpg": "/mbazze/static/media/image11.6b1f788d3d54842c544a.jpg",
+    "static/media/real.jpg": "/mbazze/static/media/real.86e21a9f3556b82ad505.jpg",
+    "static/media/vision.jpg": "/mbazze/static/media/vision.c5ce239aea78d44395d5.jpg",
+    "static/media/aboutus.jpg": "/mbazze/static/media/aboutus.fac2a88d66652a61f870.jpg",
+    "static/media/image2.jpg": "/mbazze/static/media/image2.5e0b31706166f32dd776.jpg",
+    "static/media/event.jpg": "/mbazze/static/media/event.ecb134a0a30233808aac.jpg",
+    "static/media/mission.jpg": "/mbazze/static/media/mission.f2f30674ba11882e597d.jpg",
+    "static/media/LOGO.png": "/mbazze/static/media/LOGO.1e916d999105f07b1fb4.png",
+    "static/media/artist.jpg": "/mbazze/static/media/artist.b630a6a141549d49330d.jpg",
+    "static/media/icon-instagram.svg": "/mbazze/static/media/icon-instagram.481654e0efa0d6f4a3087b4a15473b3c.svg",
+    "index.html": "/mbazze/index.html",
+    "static/media/icon2.svg": "/mbazze/static/media/icon2.a385300fcfccba18f4cd45044e866403.svg",
+    "static/media/icon.svg": "/mbazze/static/media/icon.f828a9106365a9b3e784bbdcf57fb669.svg",
+    "static/media/icon-close.svg": "/mbazze/static/media/icon-close.98e4f819c4bf630df37327d53dc2c506.svg",
+    "static/media/icon-hamburger.svg": "/mbazze/static/media/icon-hamburger.aa54af327a7869eb7586d80169a93b57.svg",
+    "main.a7840425.css.map": "/mbazze/static/css/main.a7840425.css.map",
+    "main.dff7bf41.js.map": "/mbazze/static/js/main.dff7bf41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7840425.css",
+    "static/js/main.dff7bf41.js"
+  ]
+}
