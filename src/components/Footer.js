@@ -1,8 +1,8 @@
-"use client"
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import icon2 from '../images/icon2.svg'
 import icon1 from '../images/icon.svg'
+import patner1 from '../images/patner1.jpg'
 import icon3 from '../images/icon-instagram.svg'
 import {Link} from "react-router-dom"
 
@@ -66,6 +66,15 @@ export default function Footer() {
                 <img src={icon3} alt="icon3" />
               </a>
           </article>
+          <div className='flex-col justify-center items-center text-center'>
+            <h1  className='text-black text-xl md:text-2xl my-4 md:my-8  font-semibold'>
+              In Patnership with 
+            </h1>
+            <img
+            src={patner1}
+            alt='patner'
+            className='h-[30px] mx-auto' />
+          </div>
           <div className='flex justify-center align-middle mt-6 text-lg font-semibold'>
             <p className='text-lg'>Copyright &copy; {today.getFullYear()}. All Rights Reserved.</p>
           </div>

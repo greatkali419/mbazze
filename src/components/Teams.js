@@ -2,6 +2,7 @@ import  {useEffect} from 'react'
 import { motion, useAnimation } from "framer-motion"
 import {useInView} from "react-intersection-observer"
 import { useState } from 'react'
+import image1 from '../images/image1.jpg'
 import image2 from '../images/image2.jpg'
 import image3 from '../images/image3.jpg'
 import image4 from '../images/image8.jpg'
@@ -173,7 +174,7 @@ export default function Teams() {
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
             
-              Ujunwa Somto
+              Ujunwa Somtochukwu
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
             Non Executive Board Director
@@ -218,6 +219,27 @@ export default function Teams() {
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
             Artiste
+            </h3>
+          </div>
+         
+        </motion.div>
+
+
+        <motion.div
+         animate={animation}
+         className="flex-col justify-center items-center relative w-full my-[10%]">
+          <img
+          src={image1}
+          alt='director'
+          className="w-[70%] h-[350px] block mx-auto z-10 rounded-xl" />
+
+
+          <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
+            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            Osuji Chukwubikem
+            </h2>
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            Digital Creator
             </h3>
           </div>
          

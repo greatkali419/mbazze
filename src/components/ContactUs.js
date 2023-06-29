@@ -74,8 +74,8 @@ export default function ContactUs() {
                 <h3 className="text-lg font-semibold tracking-wider mx-2 my-2"> Send us an email</h3>
                 <a
                  className="text-color block text-lg font-semibold tracking-wider mx-2" 
-                href='mailto: mbazzempire@gmail.com'>
-                mbazzempire@gmail.com
+                href='mailto: info@mbazempire.com'>
+                 info@mbazempire.com
                 </a>
             </motion.section>
 
