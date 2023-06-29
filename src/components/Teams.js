@@ -88,7 +88,7 @@ export default function Teams() {
           
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
-              Comr Nnamdi izuorah
+              Comr. Nnamdi izuorah
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
               Managing Director
@@ -108,10 +108,10 @@ export default function Teams() {
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
-            Vanessa Ezenwafor
+            Udechukwu Mmesoma
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
-            Media Strategist
+            Business Development Lead
             </h3>
           </div>
          
@@ -154,7 +154,7 @@ export default function Teams() {
             Vanessa Ezenwafor
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
-            Marketing and Communication specialist
+            Marketing and Communication strategist
             </h3>
           </div>
          
@@ -173,7 +173,7 @@ export default function Teams() {
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
             
-              Mrs Ujunwa Somto
+              Ujunwa Somto
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
             Non Executive Board Director
@@ -193,7 +193,7 @@ export default function Teams() {
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
-            Ozuluoha Chukwuebuka 
+            Local Rapper 
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
             Artiste
@@ -214,7 +214,7 @@ export default function Teams() {
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
             <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
-            Izuorah Onyedika Lynda (katchy)
+            katchy
             </h2>
             <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
             Artiste
