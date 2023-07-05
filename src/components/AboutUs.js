@@ -42,13 +42,13 @@ export default function About() {
   },[inView])
   return (
     <div>
-<div className="flex-col w-full p-4 mt-14 text-center bg-black text-white">
+<div className="flex-col w-full p-4 mt-14 text-center bg-white text-black">
      
      <section className='flex-col p-2 md:pt-14'>
       <div className='my-8 md:my-16'>
       <h1 className='block font-extrabold text-2xl text-bcolor  md:text-4xl'>
        ABOUT
-       <span className='text-white mx-2'>
+       <span className='text-black mx-2'>
          US
        </span> 
        </h1>

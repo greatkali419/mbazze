@@ -25,35 +25,35 @@ export default function Navbar() {
   } 
  
   return (
-    <nav className='flex justify-between md:justify-around md:items-center items-center max-h-[10vh] w-full p-[3%] fixed z-50 left-0 top-0 bg-black px-5'>
-    <header className='h-[36px] w-[90px] md:h-[42px] md:w-[100px] '>
+    <nav className='flex justify-between md:justify-around md:items-center items-center max-h-[8vh] w-full p-[3%] fixed z-50 left-0 top-0 bg-white px-5 md:h-[2.5vh]'>
+    <header className='h-[30px] w-[60px] md:h-[36px] md:w-[90px] '>
       <img src={logo} alt="logo" />   
     </header>
     <ul 
-    className='flex-col justify-evenly absolute top-14 h-[50vh] list-none align-middle w-full z-9 text-center bg-black py-5 md:hidden'
+    className='flex-col justify-evenly absolute top-14 h-[50vh] list-none align-middle w-full z-9 text-center bg-white py-5 md:hidden'
     style={{
       left: navbar
     }}
     >
       <Link to="/" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Home</li>
+      <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Home</li>
       </Link>
       <Link  to="/about"  onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>About Us</li>
+      <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>About Us</li>
       </Link>
       <Link  to="/service" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Our Services</li>
+      <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Our Services</li>
       </Link>
       <Link to="/contact" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>Contact Us</li>
+      <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Contact Us</li>
       </Link>
       <Link  to="/team" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-2xl text-color my-2 py-1 font-semibold'>The Team</li>
+      <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>The Team</li>
       </Link>
 
         <Lunk to='subscribe'
          spy={true} smooth={true} offset={-100} duration={600}  onClick={()=>{handleCloseMenu()}} >
-        <button className='border-bcolor border-2 bg-bcolor p-4 cursor-pointer rounded-md hover:bg-white hover:border-bcolor py-3 mt-3 text-lg font-bold'>
+        <button className='border-bcolor text-white border-2 bg-bcolor p-4 cursor-pointer rounded-md hover:bg-white hover:border-bcolor py-3 mt-3 text-lg font-bold'>
         Subscribe 
       </button>
         </Lunk>
@@ -62,24 +62,24 @@ export default function Navbar() {
     <div className='flex justify-evenly items-center'>
       <ul className='flex list-none justify-center gap-12'>
       <Link to="/" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer md:text-2xl text-2xl font-semibold hover:text-white text-color my-2 py-1 hover:text-3xl'>Home</li>
+      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Home</li>
       </Link>
       <Link  to="/about"  onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer md:text-2xl text-2xl font-semibold hover:text-white text-color my-2 py-1 hover:text-3xl'>About Us</li>
+      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>About Us</li>
       </Link>
       <Link  to="/service" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer md:text-2xl text-2xl font-semibold hover:text-white text-color my-2 py-1 hover:text-3xl'>Our Services</li>
+      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Our Services</li>
       </Link>
       <Link to="/contact" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer md:text-2xl text-2xl font-semibold hover:text-white text-color my-2 py-1 hover:text-3xl'>Contact Us</li>
+      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Contact Us</li>
       </Link>
       <Link  to="/team" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer md:text-2xl text-2xl font-semibold hover:text-white text-color my-2 py-1 hover:text-3xl'>The Team</li>
+      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>The Team</li>
       </Link>
 
         <Lunk to='subscribe'
          spy={true} smooth={true} offset={-100} duration={600}  onClick={()=>{handleCloseMenu()}} >
-        <button className='border-bcolor border-2 bg-bcolor p-12 cursor-pointer rounded-md hover:text-bcolor hover:bg-white hover:border-bcolor py-3 mt-2 text-xl font-bold tracking-wider text-white'>
+        <button className='border-bcolor border-2 bg-bcolor p-6 cursor-pointer rounded-md hover:text-bcolor hover:bg-white hover:border-bcolor py-2 text-lg font-bold tracking-wider text-white'>
         Subscribe 
       </button>
         </Lunk>
@@ -92,12 +92,12 @@ export default function Navbar() {
       {!navButton ? <GiHamburgerMenu onClick={()=> {
         handleMenu()
       }} src={open} alt="open"
-      className='text-bcolor h-8 w-8'
+      className='text-bcolor h-6 w-6'
       /> :
       <RxCross2 onClick={()=> {
         handleCloseMenu()
       }}  src={close} alt="close" 
-      className='text-bcolor h-8 w-8'
+      className='text-bcolor h-6 w-6'
       />}
     </div>
   </nav>

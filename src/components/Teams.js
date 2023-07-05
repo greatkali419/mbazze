@@ -48,19 +48,19 @@ export default function Teams() {
   },[inView])
   return (
     <div>
-<div className="flex-col justify-center items-center w-full mt-[3.4rem] text-center bg-black text-white md:pt-20 md:px-14">
+<div className="flex-col justify-center items-center w-full mt-[3.4rem] text-center bg-white text-black md:pt-20 md:px-14">
       <div className='flex-col p-5 '>
         <h1 className='block my-8 font-extrabold text-2xl text-bcolor md:text-4xl'>
         ME
-        <span className='text-white'>
+        <span className='text-black'>
           E
         </span> 
         T 
-        <span className='text-white mx-2'>
+        <span className='text-black mx-2'>
           THE
         </span> 
          TEA
-         <span className='text-white'>
+         <span className='text-black'>
           M
         </span>
         </h1>
@@ -88,35 +88,16 @@ export default function Teams() {
           </div>
           
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
               Comr. Nnamdi izuorah
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor ">
               Managing Director
             </h3>
           </div>
          
         </motion.div>
 
-        <motion.div
-         animate={animation1}
-        className="flex-col justify-center items-center relative w-full my-[10%]">
-          <img
-          src={image5}
-          alt='director'
-          className="w-[70%] h-[350px] block mx-auto z-10 rounded-xl" />
-
-
-          <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
-            Udechukwu Mmesoma
-            </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
-            Business Development Lead
-            </h3>
-          </div>
-         
-        </motion.div>
 
         <motion.div
          animate={animation}
@@ -128,10 +109,10 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             Senior Dave
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
             Music Producer
             </h3>
           </div>
@@ -151,10 +132,10 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             Vanessa Ezenwafor
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
             Marketing and Communication strategist
             </h3>
           </div>
@@ -172,11 +153,11 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             
               Ujunwa Somtochukwu
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
             Non Executive Board Director
             </h3>
           </div>
@@ -193,10 +174,10 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             Local Rapper 
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
             Artiste
             </h3>
           </div>
@@ -214,10 +195,10 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             katchy
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
             Artiste
             </h3>
           </div>
@@ -235,11 +216,11 @@ export default function Teams() {
 
 
           <div className=" relative block mx-auto w-[50%] -mt-[15%] z-20">
-            <h2 className="text-xl tracking-wider bg-color text-white  rounded-lg p-2">
+            <h2 className="text-xl tracking-wider bg-bcolor text-white  rounded-lg p-2">
             Osuji Chukwubikem
             </h2>
-            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 ">
-            Digital Creator
+            <h3 className="text-lg italic mt-2 tracking-wider bg-white text-color p-2 shadow-sm shadow-bcolor  ">
+            Brand Maven
             </h3>
           </div>
          

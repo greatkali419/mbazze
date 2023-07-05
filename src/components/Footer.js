@@ -13,7 +13,7 @@ export default function Footer() {
   const sendEmail =  (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_0r5rakr", "template_d3og02m", form.current, "asVG9PUFjNt743JWP")
+    emailjs.sendForm("service_nyw7zlq", "template_86oy6yv", form.current, "6tWxVNY2RQmIz_txc")
       .then((result) => {
         e.target.reset()
           alert('email submitted')
@@ -22,7 +22,7 @@ export default function Footer() {
       });
   };
   return (
-    <div id='subscribe' className='flex-col md:justify-center md:text-center bg-color p-8 w-full'>
+    <div id='subscribe' className='flex-col md:justify-center md:text-center bg-bcolor p-8 w-full'>
        <h2 className='text-black text-2xl md:text-3xl my-4 md:my-8  font-semibold'>
         Never miss an update
       </h2>
@@ -38,27 +38,32 @@ export default function Footer() {
           name="message"
           id='subscribe'
           placeholder='Enter your email' />
-          <button className='h-12 md:h-16 md:p-5 p-3 px-4 my-4 md:my-0 md:ml-10 md:w-[20%] w-full flex justify-center align-middle text-white bg-bcolor border-1 border-white text-lg md:text-xl font-semibold hover:bg-white hover:text-bcolor hover:border-bcolor'>
+          <button className='h-12 md:h-16 md:p-5 p-3 px-4 my-4 md:my-0 md:ml-10 md:w-[20%] w-full flex justify-center align-middle text-white bg-color border-1 border-white text-lg md:text-xl font-semibold hover:bg-white hover:text-bcolor hover:border-bcolor'>
             Subscribe
           </button>
           
       </form>
-      <section className='flex-col justify-evenly'>
-          <ul
-          className='flex-col gap-2 list-none my-6 mx-0 text-lg md:text-xl font-semibold'
+      <section className='flex-col justify-center items-center '>
+    <ul
+          className='flex-col gap-2 list-none my-8 mx-0 text-lg md:text-xl font-semibold text-center'
           >
-            <Link to='/about'>
-            <li className='hover:text-white'>About Us</li>
-            </Link>
-            <Link to='/contact'>
-            <li
-            className='hover:text-white'>Contact Us</li>
-            </Link>
-            <Link to='/team'>
-            <li
-            className='hover:text-white'>The Team</li>
-            </Link>
-          </ul> 
+             <Link to="/">
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1 '>Home</li>
+      </Link>
+      <Link  to="/about" >
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1'>About Us</li>
+      </Link>
+      <Link  to="/service">
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1'>Our Services</li>
+      </Link>
+      <Link to="/contact">
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1'>Contact Us</li>
+      </Link>
+      <Link  to="/team">
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1'>The Team</li>
+      </Link>
+
+     </ul> 
           <article className='flex justify-evenly'>
               <img src={icon1} alt="icon1" />
               <img src={icon2} alt="icon2" />
@@ -67,7 +72,7 @@ export default function Footer() {
               </a>
           </article>
           <div className='flex-col justify-center items-center text-center'>
-            <h1  className='text-black text-xl md:text-2xl my-4 md:my-8  font-semibold'>
+            <h1  className='text-white text-lg md:text-2xl my-4 md:my-8  font-semibold'>
               In Patnership with 
             </h1>
             <img
