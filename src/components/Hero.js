@@ -44,11 +44,6 @@ export default function Hero() {
             consultancy services to help
             businesses thrive in today’s
             competitive landscape. With our
-            expertise and strategic approach,
-            we enable our clients to reach their
-            target audience effectively, enhance
-            brand visibility, and achieve
-            sustainable growth.
             </h2>
             <Link to='/about'>
             <button className='border-bcolor border-2 bg-bcolor p-4 md:p-2 md:px-6 cursor-pointer rounded-md hover:bg-white hover:border-bcolor py-2 mt-5 md:mt-10 text-lg md:text-xl font-bold'

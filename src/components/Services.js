@@ -94,7 +94,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <textarea maxLength={4} className=" my-4 text-lg font-semibold md:text-xl w-full h-full">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We offer a range of business
           development services designed to
           identify and capitalize on growth
@@ -126,13 +126,13 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className=" my-4 text-lg font-semibold md:text-xl">
+        <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our artiste management services are designed to help musicians, actors, and other 
           performers navigate the complex world of entertainment. We provide a range of services, including 
           contract negotiation, career planning, performance scheduling, and marketing and promotion. Our team 
           has extensive experience working with artists of all genres and can help you achieve your goals, whether 
           you're a newcomer to the industry or an established performer.
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -150,8 +150,8 @@ export default function Services() {
         </div>
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
-          
-          <p className=" my-4 text-lg font-semibold md:text-xl">
+
+        <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           At M-bazz Empire, we specialize in comprehensive brand activation and product sampling strategies that effectively engage with target audiences and drive market penetration. Our expertise extends across various channels, including in-store, mail, open market, and leveraging our extensive distribution network.
 
           Through meticulous planning and execution, we craft tailored brand activation campaigns that resonate with consumers and deliver tangible results. Our in-store activations seamlessly integrate your brand message and product experience within retail environments, maximizing visibility and customer engagement. By leveraging our strong relationships with retail partners, we ensure widespread availability and exposure of your products across diverse stores nationwide.
@@ -160,7 +160,7 @@ export default function Services() {
 
           Furthermore, we excel in open market activation, utilizing our comprehensive network and market intelligence to identify and penetrate key open market locations. By understanding the dynamics and preferences of different regions, we devise strategies to position your products effectively and drive adoption in these markets.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -179,13 +179,13 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className=" my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We harness the power of social media
           influencers to create impactful
           campaigns that increase brand
           awareness, drive engagement, and
           generate leads for your business.
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -204,7 +204,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our roadshow campaigns are designed
               to take your brand directly to your
               target audience, creating memorable
@@ -213,7 +213,7 @@ export default function Services() {
               engagements and product
               demonstrations.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -232,7 +232,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We create captivating jingles and TV
           commercials that leave a lasting
           impression on your audience,
@@ -240,7 +240,7 @@ export default function Services() {
           message and values.
 
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -259,7 +259,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our social media experts craft and
               execute data-driven social media
               strategies to amplify your brand’s
@@ -268,7 +268,7 @@ export default function Services() {
               and analyze performance metrics to
               ensure optimal results.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -287,17 +287,16 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our team of creative professionals designs
           compelling advertising campaigns
           across traditional and digital
           channels to effectively reach your
-          5
           target audience and drive
           conversions.
 
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -316,7 +315,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           From conceptualization to execution, our
           experienced event management
           team handles all aspects of your
@@ -325,7 +324,7 @@ export default function Services() {
           logistics, and production to deliver
           memorable experiences.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -344,7 +343,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Effective media planning and strategy are essential for reaching
           your target audience and
           maximizing brand exposure. Our
@@ -357,7 +356,7 @@ export default function Services() {
           create targeted campaigns across
           various platforms, including print,
           digital, social media, and broadcast.
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -376,7 +375,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our marketing and branding services are designed to enhance
           your brand image, increase
           customer engagement, and drive
@@ -392,7 +391,7 @@ export default function Services() {
           presence and achieve measurable
           results.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -411,7 +410,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           In today’s digital age, businesses
           need to adapt and leverage
           technology to stay competitive. We
@@ -423,11 +422,10 @@ export default function Services() {
           expertise includes website and app
           development, e-commerce
           solutions, digital marketing
-          8
           automation, data analytics, and
           cloud-based services.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
@@ -446,7 +444,7 @@ export default function Services() {
         
         <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
           
-          <p className="my-4 text-lg font-semibold md:text-xl">
+          <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           To empower your team with the
           necessary skills and knowledge, we
           offer training programs and
@@ -462,7 +460,7 @@ export default function Services() {
           specific needs and ensure practical
           learning outcomes.
 
-          </p>
+          </textarea>
         </div>
         
       </motion.section>
