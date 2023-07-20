@@ -6,36 +6,8 @@ import { motion, useAnimation } from "framer-motion"
 import {useInView} from "react-intersection-observer"
 
 export default function ContactUs() {
-  const {ref, inView} = useInView({
-    threshold: 0.5
-  })
-  const animation = useAnimation()
-  const animation1 = useAnimation()
+ 
 
-  useEffect(()=>{
-    if(inView) {
-      animation.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation.start({
-        y: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    if(inView) {
-      animation1.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation1.start({
-        y: [-100,-300,0,-10,0]
-      })
-    }
-    },[inView])
   return (
     <div>
           <div className="bg-white text-black  mt-14 pt-12 md:pt-28">
@@ -46,8 +18,8 @@ export default function ContactUs() {
       </div>
 
         <div className='grid grid-flow-row md:grid-flow-col md:grid-cols-3 justify-center py-12 w-[90%] mx-auto gap-4'>
-            <motion.section
-         animate={animation}
+            <section
+      
          className="p-4 my-8 mx-4 shadow-lg shadow-[#0000002c] flex-col gap-4 rounded-xl hover:shadow-lg hover:shadow-bcolor border-2 border-bcolor">
                 <FiPhoneCall className="h-10 w-10 my-6 mx-2"/>
                 <div className="flex justify-between">
@@ -65,10 +37,9 @@ export default function ContactUs() {
                 
                 </div>
                 
-            </motion.section>
+            </section>
 
-            <motion.section 
-            animate={animation1}
+            <section 
             className="p-4 my-8 mx-4 shadow-lg shadow-[#0000002c] flex-col gap-4 rounded-xl hover:shadow-lg hover:shadow-bcolor  border-2 border-bcolor">
                 <AiOutlineMail  className="h-10 w-10 my-6 mx-2 text-bcolor"/>
                 <h3 className="text-lg font-semibold tracking-wider mx-2 my-2"> Send us an email</h3>
@@ -77,10 +48,9 @@ export default function ContactUs() {
                 href='mailto: info@mbazempire.com'>
                  info@mbazempire.com
                 </a>
-            </motion.section>
+            </section>
 
-            <motion.section
-            animate={animation}
+            <section
             className="p-4 my-8 mx-4 shadow-lg flex-col gap-4 rounded-xl hover:shadow-lg hover:shadow-bcolor  border-2 border-bcolor">
                   <FaAddressCard className="h-10 w-10 my-6 mx-2 text-bcolor" />
                   <h3 className="text-lg font-semibold tracking-wider mx-2 my-2">
@@ -97,7 +67,7 @@ export default function ContactUs() {
                       </p>
                   </article>
 
-            </motion.section>
+            </section>
         </div >
       
     </div>

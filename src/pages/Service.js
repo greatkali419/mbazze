@@ -1,10 +1,16 @@
 import Services from '../components/Services'
+import {motion } from "framer-motion"
 
 const Service = () => {
   return (
-    <div>
+    <motion.div
+    initial={{x: "-100%"}}
+    animate={{x: "0",
+  transition: {
+    duration: 1,
+  }}}>
       <Services />
-    </div>
+    </motion.div>
   )
 }
 

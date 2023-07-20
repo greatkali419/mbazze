@@ -38,7 +38,7 @@ export default function Footer() {
           name="message"
           id='subscribe'
           placeholder='Enter your email' />
-          <button className='h-12 md:h-16 md:p-5 p-3 px-4 my-4 md:my-0 md:ml-10 md:w-[20%] w-full flex justify-center align-middle text-white bg-color border-1 border-white text-lg md:text-xl font-semibold hover:bg-white hover:text-bcolor hover:border-bcolor'>
+          <button className='h-12 md:h-16 md:p-5 p-3 px-4 my-4 md:my-0 md:ml-10 md:w-[20%] w-full flex justify-center align-middle text-white bg-color border-1 border-white text-lg md:text-xl font-semibold hover:bg-white hover:text-bcolor hover:border-bcolor md:rounded-md items-center'>
             Subscribe
           </button>
           
@@ -48,7 +48,7 @@ export default function Footer() {
           className='flex-col gap-2 list-none my-8 mx-0 text-lg md:text-xl font-semibold text-center'
           >
              <Link to="/">
-      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1 '>Home</li>
+      <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1 '>Back to Home</li>
       </Link>
       <Link  to="/about" >
       <li className='cursor-pointer text-lg font-semibold text-white my-2 py-1'>About Us</li>
@@ -80,7 +80,7 @@ export default function Footer() {
             alt='patner'
             className='h-[30px] mx-auto' />
           </div>
-          <div className='flex justify-center align-middle mt-6 text-lg font-semibold'>
+          <div className='flex justify-center items-center text-center mt-6 text-lg font-semibold'>
             <p className='text-lg'>Copyright &copy; {today.getFullYear()}. All Rights Reserved.</p>
           </div>
       </section>

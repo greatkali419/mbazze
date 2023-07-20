@@ -1,9 +1,18 @@
 import AboutUs from '../components/AboutUs'
+import {motion } from "framer-motion"
+
 const About = () => {
   return (
-    <div>
+    <motion.div
+    initial={{x: "-100%"}}
+    animate={{x: "0",
+  transition: {
+    duration: 1,
+  }}}
+    exit={{x: window.innerWidth}}
+   >
       <AboutUs />
-    </div>
+    </motion.div>
   )
 }
 

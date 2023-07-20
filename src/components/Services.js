@@ -16,58 +16,10 @@ import influencer from '../images/influencer.jpg'
 
 
 
-import  {useEffect} from 'react'
-import { motion, useAnimation } from "framer-motion"
-import {useInView} from "react-intersection-observer"
-import { useState } from 'react'
+
 
 export default function Services() {
-  const {ref, inView} = useInView({
-    threshold: 0.5
-  })
-  const animation = useAnimation()
-  const animation1 = useAnimation()
-  const animation2 = useAnimation()
-  const control = useAnimation();
-
-  useEffect(()=>{
-    if(inView) {
-      animation.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation.start({
-        y: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    if(inView) {
-      animation1.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation1.start({
-        y: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    if(inView) {
-      animation2.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation2.start({
-        y: [100,300,0,10,0]
-      })
-      
-
-    }
-  },[inView])
+  
   return (
     <div>
 <div className="flex-col w-full p-4 mt-14 text-center  bg-white text-black md:pt-20">
@@ -79,8 +31,8 @@ export default function Services() {
       </h1>
      <section className='md:grid md:grid-cols-5 gap-8 md:w-[90%] mx-auto '>
     
-      <motion.section
-         animate={animation1}
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -92,7 +44,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We offer a range of business
@@ -110,34 +62,34 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
           src={Artist}
           alt='artist'
           className='md:h-[300px] md:rounded-2xl' />
-          <h2 className="font-bold text-2xl my-10 text-bcolor">
-          Artiste Management
+          <h2 className="font-bold text-2xl my-10 text-bcolor ">
+          Artiste 
+          Management
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
         <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our artiste management services are designed to help musicians, actors, and other 
           performers navigate the complex world of entertainment. We provide a range of services, including 
-          contract negotiation, career planning, performance scheduling, and marketing and promotion. Our team 
+          contract negotiation, career planning, performance scheduling, and marketing and pro Our team 
           has extensive experience working with artists of all genres and can help you achieve your goals, whether 
           you're a newcomer to the industry or an established performer.
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation2}
+      </section>
+      <section
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -149,7 +101,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
 
         <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           At M-bazz Empire, we specialize in comprehensive brand activation and product sampling strategies that effectively engage with target audiences and drive market penetration. Our expertise extends across various channels, including in-store, mail, open market, and leveraging our extensive distribution network.
@@ -163,9 +115,33 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation}
+      </section>
+      <section
+         className='mt-24'>
+        <div className='my-5 text-left'>
+          <img
+          src={digital}
+          alt='events'
+          className='md:h-[300px] md:rounded-2xl' />
+          <h2 className="font-bold text-2xl my-10 text-bcolor">
+          Brand management
+          </h2>
+        </div>
+        
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
+
+        <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
+        Our brand management services help businesses establish, maintain and enhance 
+        their brand identity. We work with you to develop a unique brand strategy that aligns with your business 
+        goals and values, and then implement that strategy through various channels such as advertising, public 
+        relations, social media, and content creation.
+
+          </textarea>
+        </div>
+        
+      </section>
+      <section
+         
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -177,7 +153,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We harness the power of social media
@@ -188,9 +164,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -202,7 +178,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our roadshow campaigns are designed
@@ -216,9 +192,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -230,7 +206,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           We create captivating jingles and TV
@@ -243,9 +219,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -257,7 +233,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our social media experts craft and
@@ -271,9 +247,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -285,7 +261,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our team of creative professionals designs
@@ -299,9 +275,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -313,7 +289,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           From conceptualization to execution, our
@@ -327,9 +303,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -341,7 +317,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Effective media planning and strategy are essential for reaching
@@ -359,9 +335,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -373,7 +349,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           Our marketing and branding services are designed to enhance
@@ -394,9 +370,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -408,7 +384,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           In today’s digital age, businesses
@@ -428,9 +404,9 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
-      <motion.section
-         animate={animation1}
+      </section>
+      <section
+        
          className='mt-24'>
         <div className='my-5 text-left'>
           <img
@@ -442,7 +418,7 @@ export default function Services() {
           </h2>
         </div>
         
-        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-bcolor">
+        <div className="flex-col p-2 my-3 rounded-2xl shadow-md shadow-gray-300 ">
           
           <textarea maxLength={50} className=" my-4 text-lg font-semibold md:text-xl w-full h-[170px] md:h-[200px]">
           To empower your team with the
@@ -463,7 +439,7 @@ export default function Services() {
           </textarea>
         </div>
         
-      </motion.section>
+      </section>
      </section>
       
       

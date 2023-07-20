@@ -1,10 +1,16 @@
 import Teams from '../components/Teams'
+import {motion } from "framer-motion"
 
 const Team = () => {
   return (
-    <div>
+    <motion.div
+    initial={{x: "-100%"}}
+    animate={{x: "0",
+  transition: {
+    duration: 1,
+  }}}>
       <Teams />
-    </div>
+    </motion.div>
   )
 }
 

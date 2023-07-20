@@ -12,43 +12,10 @@ import image10 from '../images/image10.jpg'
 import image11 from '../images/image11.jpg'
 
 export default function Teams() {
-  const {ref, inView} = useInView({
-    threshold: 0.5
-  })
-  const animation = useAnimation()
-  const animation1 = useAnimation()
-  const control = useAnimation();
 
-  useEffect(()=>{
-    if(inView) {
-      animation.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation.start({
-        y: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    if(inView) {
-      animation1.start({
-        y: 0,
-        
-      })
-    }if(!inView) {
-      animation1.start({
-        y: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    
-  },[inView])
   return (
     <div>
-<div className="flex-col justify-center items-center w-full mt-[3.4rem] text-center bg-white text-black md:pt-20 md:px-14">
+    <div className="flex-col justify-center items-center w-full mt-[3.4rem] text-center bg-white text-black md:pt-20 md:px-14">
       <div className='flex-col p-5 '>
         <h1 className='block my-8 font-extrabold text-2xl text-bcolor md:text-4xl'>
         ME
@@ -64,7 +31,7 @@ export default function Teams() {
           M
         </span>
         </h1>
-        <p className='flex my-12 p-2 rounded-2xl shadow-md  md:text-2xl md:text-center md:p-6  shadow-bcolor text-center text-lg font-semibold tracking-wider'>
+        <p className='flex my-12 p-2 rounded-2xl shadow-md  md:text-2xl md:text-center md:p-6  shadow-gray-300  text-center text-lg font-semibold tracking-wider'>
         At Mbazz , we have a talented team of professionals who are dedicated to delivering exceptional results 
         for our clients. Our team members are experts in their respective fields and bring a wealth of experience 
         to every project we undertake. Get to know the members of our team
@@ -73,8 +40,8 @@ export default function Teams() {
 
 
         <div className="grid grid-flow-row md:grid-flow-col md:grid-rows-2">
-        <motion.div
-         animate={animation}
+        <div
+         
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <div>
             
@@ -96,11 +63,11 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
 
-        <motion.div
-         animate={animation}
+        <div
+         
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image3}
@@ -117,13 +84,12 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
         
 
 
-        <motion.div
-         animate={animation1}
+        <div
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image10}
@@ -140,11 +106,11 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
 
-        <motion.div
-         animate={animation}
+        <div
+         
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image11}
@@ -162,10 +128,9 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
-        <motion.div
-         animate={animation1}
+        <div
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image2}
@@ -182,11 +147,11 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
 
-        <motion.div
-         animate={animation}
+        <div
+         
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image7}
@@ -203,11 +168,11 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
 
-        <motion.div
-         animate={animation}
+        <div
+         
          className="flex-col justify-center items-center relative w-full my-[10%]">
           <img
           src={image1}
@@ -224,13 +189,13 @@ export default function Teams() {
             </h3>
           </div>
          
-        </motion.div>
+        </div>
 
         </div>
         
 
       <div className=" p-4 ">
-        <h2 className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-2xl md:text-center md:p-6 font-semibold tracking-wider'>
+        <h2 className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-2xl md:text-center md:p-6 font-semibold tracking-wider'>
         Our team is passionate about what we do, and we strive to exceed our clients' expectations with every 
         project. Contact us to learn more about how we can help your business succeed
         </h2>

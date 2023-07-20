@@ -1,10 +1,16 @@
 import ContactUs from '../components/ContactUs'
+import {motion } from "framer-motion"
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+    initial={{x: "-100%"}}
+    animate={{x: "0",
+  transition: {
+    duration: 1,
+  }}}>
       <ContactUs />
-    </div>
+    </motion.div>
   )
 }
 

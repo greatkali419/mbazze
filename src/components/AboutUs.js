@@ -1,47 +1,12 @@
 import aboutus from '../images/aboutus.jpg'
 import vison from '../images/vision.jpg'
 import mission from '../images/mission.jpg'
-import  {useEffect} from 'react'
-import { motion, useAnimation } from "framer-motion"
-import {useInView} from "react-intersection-observer"
+
 
 export default function About() {
-  const {ref, inView} = useInView({
-    threshold: 0.5
-  })
-  const animation = useAnimation()
-  const animation1 = useAnimation()
 
-  
-  useEffect(()=>{
-    if(inView) {
-      animation.start({
-        x: 0,
-        
-      })
-    }if(!inView) {
-      animation.start({
-        x: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    if(inView) {
-      animation1.start({
-        x: 0,
-        
-      })
-    }if(!inView) {
-      animation1.start({
-        x: [-100,-300,0,-10,0]
-      })
-      
-
-    }
-    
-  },[inView])
   return (
-    <div>
+    <div  id='about'>
 <div className="flex-col w-full p-4 mt-14 text-center bg-white text-black">
      
      <section className='flex-col p-2 md:pt-14'>
@@ -54,8 +19,7 @@ export default function About() {
        </h1>
       </div>
      
-       <motion.article
-         animate={animation}
+       <article
         className='md:grid md:grid-cols-2 md:w-[90%] md:mx-auto md:gap-8 md:py-2'>
        <div className='flex justify-center w-full'>
          <img
@@ -64,7 +28,7 @@ export default function About() {
          alt='about1' />
        </div>
        <div className="flex-col">
-         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl font-semibold tracking-wider '>
+         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300 text-center text-lg md:text-xl font-semibold tracking-wider '>
          M-bazz Empire is a distinguished umpire,
          offering services in brand management and marketing
          communications, talent promotion, entrepreneurship, and
@@ -74,7 +38,7 @@ export default function About() {
          local to global platforms. Our accomplished team engages
          in talent hunts, event planning, and socio-cultural promotions.
          </p>
-         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl  font-semibold tracking-wider'>
+         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-xl  font-semibold tracking-wider'>
          Over the years, M-bazz Empire has organically evolved into
          an industry leader by integrating diverse perspectives and
          values from individuals across different regions and orientations.
@@ -83,7 +47,7 @@ export default function About() {
          services to a vast audience through our extensive media
          coverage.
          </p>
-         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl  font-semibold tracking-wider'>
+         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-xl  font-semibold tracking-wider'>
          Our unique promotion pattern encompasses a
          strategic mix of offline and online campaigns, bolstered by the
          endorsement of individuals we have helped establish as
@@ -92,7 +56,7 @@ export default function About() {
          and social values, M-bazz Empire offers professional real
          estate services.
          </p>
-         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl  font-semibold tracking-wider'>
+         <p className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-xl  font-semibold tracking-wider'>
           Our experienced team, hailing from diverse
          backgrounds, assists clients in buying, selling, or leasing
          properties, delivering personalized and expert guidance
@@ -104,13 +68,12 @@ export default function About() {
          Awards of Recognition.
          </p>
        </div>
-       </motion.article>
+       </article>
        
         
        </section>
        <article className='md:grid md:grid-cols-2 md:w-[90%] md:mx-auto md:gap-8 w-full mx-auto'>
-       <motion.section
-         animate={animation1}
+       <section
          >
          <h1 className='block my-8 font-extrabold text-2xl text-bcolor'>
          MISSION
@@ -122,7 +85,7 @@ export default function About() {
          src={mission}
          alt='about1' />
          </div>
-         <div className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl  font-semibold tracking-wider md:w-full'>
+         <div className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-xl  font-semibold tracking-wider md:w-full'>
          <p>
            At M-bazz Empire, our mission is to discover and
            promote exceptional talents across Nigeria, empowering
@@ -142,10 +105,9 @@ export default function About() {
 
          </p>
          </div>
-       </motion.section>
+       </section>
 
-       <motion.section
-         animate={animation}
+       <section
          >
          <h1 className='block my-8 font-extrabold text-2xl text-bcolor'>
          VISION
@@ -158,7 +120,7 @@ export default function About() {
          src={vison}
          alt='about1' />
          </div>
-         <div className='flex p-2 my-12 rounded-2xl shadow-md shadow-bcolor text-center text-lg md:text-xl  font-semibold tracking-wider '>
+         <div className='flex p-2 my-12 rounded-2xl shadow-md shadow-gray-300  text-center text-lg md:text-xl  font-semibold tracking-wider '>
          <p>
            M-bazz Empire envisions becoming a global leader in the
            media, marketing, and real estate industries, transcending
@@ -172,7 +134,7 @@ export default function About() {
            aspire to.
          </p>
          </div>
-       </motion.section>
+       </section>
        </article>
    </div>
     </div>

@@ -8,18 +8,18 @@ import {Link }from "react-router-dom"
 import  {Link as Lunk, animateScroll as scroll} from 'react-scroll'
 import useWindowSize from '../hooks/UseWindowSize'
 import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Navbar() {
   const { width } = useWindowSize();
+  const control = useAnimation();
 
-    const [navbar, setNavbar] = useState('-1444px')
+    const [navbar, setNavbar] = useState('100%')
     const [navButton, setNavButton] = useState(false)
   const handleMenu = ()=> {
-    setNavbar('0px')
     setNavButton(true)
   } 
   const handleCloseMenu = ()=> {
-    setNavbar('-1444px')
     setNavButton(false)
   
   } 
@@ -29,52 +29,81 @@ export default function Navbar() {
     <header className='h-[30px] w-[60px] md:h-[36px] md:w-[90px] '>
       <img src={logo} alt="logo" />   
     </header>
-    <ul 
-    className='flex-col justify-evenly absolute top-14 h-[50vh] list-none align-middle w-full z-9 text-center bg-white py-5 md:hidden'
+    <motion.ul 
+    animate={control}
+    className='flex-col justify-evenly absolute top-12 h-[50vh] list-none align-middle items-center w-full z-9 text-center bg-white md:hidden'
     style={{
       left: navbar
     }}
+  
     >
-      <Link to="/" onClick={()=>{handleCloseMenu()}}>
+      <Link to="/" onClick={()=>{handleCloseMenu()
+      control.start({
+        x: "100%",
+        transition: { duration: 1 }
+      })}}>
       <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Home</li>
       </Link>
-      <Link  to="/about"  onClick={()=>{handleCloseMenu()}}>
+      
+      <Link  to="/about"  onClick={()=>{handleCloseMenu()
+      control.start({
+        x: "100%",
+        transition: { duration: 1 }
+      })}}>
       <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>About Us</li>
       </Link>
-      <Link  to="/service" onClick={()=>{handleCloseMenu()}}>
+      <Link  to="/service" onClick={()=>{handleCloseMenu()
+      control.start({
+        x: "100%",
+        transition: { duration: 1 }
+      })}}>
       <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Our Services</li>
       </Link>
-      <Link to="/contact" onClick={()=>{handleCloseMenu()}}>
+      <Link to="/contact" onClick={()=>{handleCloseMenu()
+      control.start({
+        x: "100%",
+        transition: { duration: 1 }
+      })}}>
       <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>Contact Us</li>
       </Link>
-      <Link  to="/team" onClick={()=>{handleCloseMenu()}}>
+      <Link  to="/team" onClick={()=>{handleCloseMenu()
+      control.start({
+        x: "100%",
+        transition: { duration: 1 }
+      })
+      }}>
       <li className='block cursor-pointer text-xl text-bcolor my-2 py-2 font-semibold'>The Team</li>
       </Link>
 
         <Lunk to='subscribe'
-         spy={true} smooth={true} offset={-100} duration={600}  onClick={()=>{handleCloseMenu()}} >
-        <button className='border-bcolor text-white border-2 bg-bcolor p-4 cursor-pointer rounded-md hover:bg-white hover:border-bcolor py-3 mt-3 text-lg font-bold'>
+         spy={true} smooth={true} offset={-100} duration={900}  onClick={()=>{handleCloseMenu()
+          control.start({
+            x: "100%",
+            transition: { duration: 1 }
+          })
+         }} >
+        <button className='border-bcolor text-white border-2 bg-bcolor p-4 cursor-pointer rounded-md hover:bg-white hover:border-bcolor py-3 mt-3 text-lg font-bold  transition ease-in-out'>
         Subscribe 
       </button>
         </Lunk>
-    </ul>
+    </motion.ul>
     {width >768 ?
     <div className='flex justify-evenly items-center'>
       <ul className='flex list-none justify-center gap-12'>
       <Link to="/" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Home</li>
+      <li className='ease-in-out cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Home</li>
       </Link>
       <Link  to="/about"  onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>About Us</li>
+      <li className='ease-in-out cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>About Us</li>
       </Link>
       <Link  to="/service" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Our Services</li>
+      <li className='ease-in-out cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Our Services</li>
       </Link>
       <Link to="/contact" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Contact Us</li>
+      <li className='ease-in-out cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>Contact Us</li>
       </Link>
       <Link  to="/team" onClick={()=>{handleCloseMenu()}}>
-      <li className='cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>The Team</li>
+      <li className='ease-in-out cursor-pointer text-xl font-semibold text-bcolor my-2 py-1 hover:text-2xl'>The Team</li>
       </Link>
 
         <Lunk to='subscribe'
@@ -90,13 +119,21 @@ export default function Navbar() {
 
     <div className='flex justify-center align-middle my-auto md:hidden hover:cursor-pointer' >
       {!navButton ? <GiHamburgerMenu onClick={()=> {
-        handleMenu()
-      }} src={open} alt="open"
-      className='text-bcolor h-6 w-6'
+                      handleMenu()
+                  control.start({
+                        x: "-100%",
+                        transition: { duration: 1 }
+                      })
+                  }} src={open} alt="open"
+      className='text-bcolor h-6 w-6 '
       /> :
-      <RxCross2 onClick={()=> {
+      <RxCross2 onClick={()=>  {
         handleCloseMenu()
-      }}  src={close} alt="close" 
+        control.start({
+          x: "100%",
+          transition: { duration: 1 }
+        })
+    }}  src={close} alt="close" 
       className='text-bcolor h-6 w-6'
       />}
     </div>
